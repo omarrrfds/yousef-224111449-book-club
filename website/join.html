@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="A simple student reading club.">
+  <title>Join - Campus Book Club</title>
+  <link rel="stylesheet" href="vendor/bootstrap.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body id="top">
+  <header>
+    <h1>Campus Book Club</h1>
+    <nav aria-label="Main navigation">
+      <a href="index.html">Home</a>
+      <a href="books.html">Books</a>
+      <a href="schedule.html">Schedule</a>
+      <a href="join.html">Join</a>
+    </nav>
+  </header>
+  <main>
+    <section>
+      <h2>Join the club</h2>
+      <p>This is a practice form. No membership is created. Use sample details only.</p>
+      <form action="join.html#demo" method="get">
+        <label for="name">Name</label>
+        <input class="form-control" id="name" type="text" required>
+        <label for="email">Email</label>
+        <input class="form-control" id="email" type="email" required>
+        <label for="password">Practice password</label>
+        <input class="form-control" id="password" type="password" minlength="6" required>
+        <label for="books">Books read this month</label>
+        <input class="form-control" id="books" type="number" min="0" max="50" value="0">
+        <label for="date">Preferred start date</label>
+        <input class="form-control" id="date" type="date" required>
+        <fieldset>
+          <legend>Meeting choice</legend>
+          <label><input type="radio" name="meeting" value="campus" checked> Campus</label>
+          <label><input type="radio" name="meeting" value="online"> Online</label>
+        </fieldset>
+        <label for="genre">Favourite genre</label>
+        <select class="form-select" id="genre">
+          <option>Fantasy</option>
+          <option>Fiction</option>
+          <option>History</option>
+        </select>
+        <label for="message">Why would you like to join?</label>
+        <textarea class="form-control" id="message" rows="3"></textarea>
+        <label><input type="checkbox" required> I understand this is a demonstration.</label>
+        <button class="btn btn-success mt-3" type="submit">Submit demo</button>
+      </form>
+      <p id="demo">Demo only: the form reloads this page. Details are not saved.</p>
+    </section>
+  </main>
+  <footer>Yousef reda fahmy mohamed - 224111449</footer>
+  <a class="top" href="#top">Top</a>
+</body>
+</html>
