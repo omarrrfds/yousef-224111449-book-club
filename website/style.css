@@ -1,5 +1,5 @@
 body {
-  font-family: Arial, sans-serif;
+  font-family: Arial;
   background: #f3f0ff;
   color: #2b2350;
   margin: 0;
@@ -12,52 +12,25 @@ header, footer {
   text-align: center;
 }
 
-nav a {
-  color: white;
-  margin: 0 10px;
-}
+nav a { color: white; margin: 10px; }
 
-main {
-  max-width: 800px;
-  margin: auto;
-  padding: 20px;
-}
+main { max-width: 800px; margin: auto; padding: 20px; }
 
 section, article, aside {
   background: white;
   padding: 16px;
   margin-bottom: 16px;
-  border-radius: 10px;
-  border-top: 4px solid #f59e0b;
+  border-top: 4px solid orange;
 }
 
 h2 { color: #6d28d9; }
 
-.books {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 16px;
-}
+.books { display: flex; flex-wrap: wrap; gap: 16px; }
+.books article { flex: 1 1 250px; }
 
 img, audio { max-width: 100%; }
-
 table { width: 100%; border-collapse: collapse; }
 th, td { border: 1px solid #c4b5fd; padding: 8px; }
-th { background: #ede9fe; }
-
 label { display: block; margin-top: 12px; }
-
-.btn-success { background: #6d28d9; border-color: #6d28d9; }
-
-.top {
-  position: fixed;
-  bottom: 12px;
-  right: 12px;
-  background: #f59e0b;
-  padding: 6px 12px;
-  border-radius: 20px;
-}
-
-@media (max-width: 600px) {
-  .books { grid-template-columns: 1fr; }
-}
+.btn-success { background: #6d28d9; }
+.top { position: fixed; bottom: 12px; right: 12px; background: orange; padding: 6px; }
